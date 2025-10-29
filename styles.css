@@ -1,0 +1,21 @@
+/* klase sektori, moze biti vise istih klasa */
+.treci{
+            color: greenyellow;
+        }
+
+/* element selector*/
+        h2, p{
+            color:blueviolet    
+        }
+/* id selektor, moze biti samo jedan */
+#naslov{
+    color:chocolate
+}    
+/* selektor koji se primjenjuje na sve */
+*{
+    background-color: rgb(226, 112, 150);
+}
+/* selekor s odredenim atributom */
+p[draggabble="true"]{
+    background color:black;
+}
