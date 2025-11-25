@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .relative{
+            width: 500px;
+            height: 300px;
+            border: 1px solid black;
+            position: relative;
+        }
+        .prvi{
+            width: 200px;
+            height: 300px;
+            background-color: rgba(188, 44, 243, 0.7);
+            position: absolute;
+            z-index: 1;
+        }
+        .drugi{
+            width: 200px;
+            height: 300px;
+            background-color: rgb(220, 20, 177);
+            box-shadow: 5px 10px rgb(190, 24, 190);
+            position: absolute;
+            left: 150px;
+        }
+    </style>
+</head>
+<body bgcolor="gray">
+    <h1>CSS Positioning</h1>
+    <div class="relative">
+        <div class="prvi"></div>
+        <div class="drugi"></div>
+    </div>
+    
+</body>
+</html>

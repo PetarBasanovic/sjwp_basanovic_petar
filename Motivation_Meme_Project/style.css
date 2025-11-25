@@ -1,0 +1,17 @@
+h1{
+    font-family: "Libre Baskerville", serif;
+    color: aliceblue;
+    top: 50%;
+    text-align: center;
+}
+.slika{
+    width: 30%;
+    margin-left: 35%;
+    margin-bottom: 12%;
+    border: 5px solid white;
+}
+p{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 5%;
+}
