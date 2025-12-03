@@ -1,0 +1,78 @@
+.plava{
+    width: 500px;
+    height: 350px;
+    background-color: blue;
+    position: relative;
+}
+.crv_h{
+    background-color: red;
+    position: absolute;
+    width: 50px;
+    height: 350px;
+    margin-left: 150px;
+    z-index: 2;
+}
+.crv_v{
+    background-color: red;
+    position: absolute;
+    height: 50px;
+    width: 500px;
+    margin-top: 150px;
+    z-index: 2;
+}
+.bijela_h{
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    height: 100px;
+    width: 500px;
+    margin-top: 125px;
+}
+.bijela_v{
+    background-color: white;
+    position: absolute;
+    z-index: 1;
+    height: 350px;
+    width: 100px;
+    margin-left: 125px;
+}
+
+.plavo{
+    background-color: rgb(13, 182, 182);
+    position: relative;
+    width: 500px;
+    height: 300px;
+    z-index: 1;
+}
+.crno{
+    height: 0;
+    width: 0;
+    position: absolute;
+    border-left: 150px solid black;
+    border-bottom: 150px solid transparent;
+    border-top: 150px solid transparent;
+    z-index: 3;
+}
+.zuto{
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    background-color: yellow;
+    margin-top: 100px;
+    z-index: 2;
+}
+
+.b1{
+    position: relative;
+    width: 400px;
+    height: 350px;
+    background-color: red;
+    margin-left: 150px;
+}
+.b2{
+    position: absolute;
+    background-color: white;
+    height: 350px;
+    width: 50px;
+    z-index: 1;
+}
