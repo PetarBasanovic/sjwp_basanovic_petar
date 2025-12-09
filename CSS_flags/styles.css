@@ -76,3 +76,92 @@
     width: 50px;
     z-index: 1;
 }
+
+.zel{
+    position: relative;
+    background-color: #007A5E;
+    height: 350px;
+    width: 175px;
+}
+.crv{
+    margin-left: 175px;
+    position: absolute;
+    background-color: #CF1126;
+    height: 350px;
+    width: 175px;
+}
+.zut{
+    position: absolute;
+    background-color: #FCD116;
+    height: 350px;
+    width: 175px;
+    margin-left: 175px;
+}
+.zutz{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 125px;
+    margin-left: -137.5px;
+    background: gold;
+    clip-path: polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%
+        );
+}
+
+.t1{
+    position: relative;
+    background-color: red;
+    height: 300px;
+    width: 400px;
+}
+.t2{
+    border-radius: 50%;
+    height: 125px;
+    width: 125px;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+.t3{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    background-color: red;
+    z-index: 2;
+    margin-top: 10px;
+    margin-left: 27.5px;
+}
+.t4{
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    margin-left: 80px;
+    background: white;
+    clip-path: polygon(
+            50% 0%,
+            61% 35%,
+            98% 35%,
+            68% 57%,
+            79% 91%,
+            50% 70%,
+            21% 91%,
+            32% 57%,
+            2% 35%,
+            39% 35%
+        );
+        transform: rotate(-20deg);
+}
