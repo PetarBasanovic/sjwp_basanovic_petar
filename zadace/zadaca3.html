@@ -10,9 +10,14 @@
     body {
   background-color: #222831;
   position: absolute;
-  overflow-y: hidden;
+  
   overflow-x: hidden;
+  overflow-y: scroll; 
+  padding-bottom: 100px;
     }
+    html::-webkit-scrollbar {
+  display: none;
+}
     .upperrow{
         background-color: #333333;
         height: 60px;
@@ -32,24 +37,6 @@
         background-color: #562097;
         height: 45px;
         width: 170px;
-        margin-left: 910px;
-        margin-top: 7.5px;
-         z-index: 0;
-        position: absolute;
-        color: #D3DAD9;
-        font-size: 20px;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        padding-left: 0px;
-    }
-    .movies:hover{
-        background-color: #7d33d8;
-    }
-    .series{
-        background-color: #562097;
-        height: 45px;
-        width: 170px;
         margin-left: 1100px;
         margin-top: 7.5px;
          z-index: 0;
@@ -59,13 +46,17 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
     }
-    .series:hover{
+    .movies:hover{
         background-color: #7d33d8;
     }
+    .movies:active{
+        background: #6000d4;
+    }
     
-    
-    .tvshows{
+    .series{
         background-color: #562097;
         height: 45px;
         width: 170px;
@@ -78,11 +69,13 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
     }
-    .tvshows:hover{
+    .series:hover{
         background-color: #7d33d8;
     }
-    .toprated{
+    .animated{
         background-color: #562097;
         height: 45px;
         width: 170px;
@@ -95,11 +88,25 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        border: 1px solid #ccc;
+        border-radius: 8px;
     }
-    .toprated:hover{
+    .animated:hover{
         background-color: #7d33d8;
     }
     
+    label {
+    display: block;
+    outline: none;
+}
+
+input[type="radio"] {
+    appearance: none;
+    display: none;
+}
+
+
+
     .search{
         background-color: #330669;
         height: 40px;
@@ -123,7 +130,7 @@
         background-color: #5C3E94;
     }    
 
-    .container {
+    .container1 {
     display: flex;
     gap: 50px;
     margin-top: 50px;
@@ -131,8 +138,7 @@
     margin-top: 100px;
     margin-left: 30px;
 }
-
-.breakingbad, .chernobyl {
+.breakingbad, .chernobyl, .rickandmorty, .bojackhorseman, .fightclub {
     width: 330px;
     height: 480px;
     text-align: center;
@@ -140,18 +146,156 @@
     color: #9929EA;
     transition: transform 0.3s ease, color 0.3s ease;
 }
-
 .breakingbad:hover {
     transform: scale(1.1);
     color: #1ABC9C;
 }
-
 .chernobyl:hover {
     transform: scale(1.1);
     color: #556B2F;
 }
+.rickandmorty:hover{
+    transform: scale(1.1);
+    color: #00ffcc;
+}
+.bojackhorseman:hover{
+    transform: scale(1.1);
+    color: #c97b3b;
+}
+.fightclub:hover{
+    transform: scale(1.1);
+    color: #ff4c4c;
+}
+.breakingbad img, .chernobyl img, .rickandmorty img, .bojackhorseman img, .fightclub img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
 
-.breakingbad img, .chernobyl img {
+.container2 {
+    display: flex;
+    gap: 50px;
+    margin-top: 550px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.solaropposites, .thegodfather, .thesopranos, .insidejob, .cars {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.solaropposites:hover {
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+.thegodfather:hover {
+    transform: scale(1.1);
+    color: #b71c1c;
+}
+.thesopranos:hover{
+    transform: scale(1.1);
+    color: #ff3b3b;
+}
+.insidejob:hover{
+    transform: scale(1.1);
+    color: #ff6f61;
+}
+.cars:hover{
+    transform: scale(1.1);
+    color: #f44336;
+}
+.solaropposites img, .thegodfather img, .thesopranos img, .insidejob img, .cars img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+
+.container3 {
+    display: flex;
+    gap: 50px;
+    margin-top: 1100px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.thedarkknight, .joker, .friends, .avatar, .interstellar {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.thedarkknight:hover {
+    transform: scale(1.1);
+    color: #3498db;
+}
+.joker:hover {
+    transform: scale(1.1);
+    color: #8b0000;
+}
+.friends:hover{
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+.avatar:hover{
+    transform: scale(1.1);
+    color: #00aaff;
+}
+.interstellar:hover{
+    transform: scale(1.1);
+    color: #e0e0d1;
+}
+.thedarkknight img, .joker img, .friends img, .avatar img, .interstellar img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+
+.container4 {
+    display: flex;
+    gap: 50px;
+    margin-top: 1650px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.gameofthrones, .toystory, .deadpool, .findingnemo, .avengersendgame {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.gameofthrones:hover {
+    transform: scale(1.1);
+    color: #a52a2a;
+}
+.toystory:hover {
+    transform: scale(1.1);
+    color: #ffeb3b;
+}
+.deadpool:hover{
+    transform: scale(1.1);
+    color: #ff0000;
+}
+.findingnemo:hover{
+    transform: scale(1.1);
+    color: #ff7f50;
+}
+.avengersendgame:hover{
+    transform: scale(1.1);
+    color: #1e90ff;
+}
+.gameofthrones img, .toystory img, .deadpool img, .findingnemo img, .avengersendgame img {
     width: 330px;
     height: 480px;
     display: block;
@@ -160,29 +304,156 @@
 </style>
 <body>
     <div class="upperrow">Stranica</div>
-    <div class="movies">Movies</div>
-    <div class="series">Series</div>
-    <div class="tvshows">TV Shows</div>
-    <div class="toprated">Top Rated</div>
+
+
+
+
+<input type="radio" id="movies" name="filter">
+<label for="movies" class="movies">Movies</label>
+
+<input type="radio" id="series" name="filter">
+<label for="series" class="series">Series</label>
+
+<input type="radio" id="animated" name="filter">
+<label for="animated" class="animated">Animated</label>
+
+
+
+
     <div class="search">search...</div>
     <input class="search" type="text" placeholder="search...">
 
 
-    <div class="container">
+    <div class="container1">
     <div class="breakingbad">
         <a href="https://www.imdb.com/title/tt0903747/" target="_blank">
             <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg" alt="Breaking Bad">
         </a>
         <div class="movie-title">Breaking Bad</div>
     </div>
-
     <div class="chernobyl">
         <a href="https://www.imdb.com/title/tt7366338/" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg" alt="Chernobyl">
         </a>
         <div class="movie-title">Chernobyl</div>
     </div>
+    <div class="rickandmorty">
+        <a href="https://www.imdb.com/title/tt2861424/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BZGQyZjk2MzMtMTcyNC00NGU3LTlmNjItNDExMWM4ZDFhYmQ2XkEyXkFqcGc@._V1_.jpg" alt="Rick and Morty">
+        </a>
+        <div class="movie-title">Rick and Morty</div>
+    </div>
+    <div class="bojackhorseman">
+        <a href="https://www.imdb.com/title/tt3398228/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BZmMwMDlkNTEtMmQzZS00ODQ0LWJlZmItOTgwYWMwZGM4MzFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Bojack Horseman">
+        </a>
+        <div class="movie-title">Bojack Horseman</div>
+    </div>
+    <div class="fightclub">
+        <a href="https://www.imdb.com/title/tt0137523/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Fight Club">
+        </a>
+        <div class="movie-title">Fight Club</div>
+    </div>
 </div>
 
+ <div class="container2">
+    <div class="solaropposites">
+        <a href="https://www.imdb.com/title/tt8910922/" target="_blank">
+            <img src="https://images.justwatch.com/poster/307016151/s718/solar-opposites.jpg" alt="Solar Opposites">
+        </a>
+        <div class="movie-title">Solar Opposites</div>
+    </div>
+    <div class="thegodfather">
+        <a href="https://www.imdb.com/title/tt0068646/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Godfather">
+        </a>
+        <div class="movie-title">The Godfather</div>
+    </div>
+    <div class="thesopranos">
+        <a href="https://www.imdb.com/title/tt0141842/" target="_blank">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894124_b_v8_ab.jpg" alt="The Sopranos">
+        </a>
+        <div class="movie-title">The Sopranos</div>
+    </div>
+    <div class="insidejob">
+        <a href="https://www.imdb.com/title/tt10231312/" target="_blank">
+            <img src="https://resizing.flixster.com/ctvMzyhWb5v7Wu-LeCcRb3Hi834=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vNDhjNDUwNGMtMTMwZC00NjRmLThlNjQtMDEzNmJmNGU1YzIxLmpwZw==" alt="Inside Job">
+        </a>
+        <div class="movie-title">Inside Job</div>
+    </div>
+    <div class="cars">
+        <a href="https://www.imdb.com/title/tt0137523/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/34/Cars_2006.jpg/250px-Cars_2006.jpg" alt="Cars">
+        </a>
+        <div class="movie-title">Cars</div>
+    </div>
+</div>
+
+<div class="container3">
+    <div class="thedarkknight">
+        <a href="https://www.imdb.com/title/tt0468569/" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/auIs5tjWlLYaFPGClZOJ7m5YVbnX6uBvz0X02r8TkwFKdzE53ww2MqWSS9gU0YNqoYwvpg" alt="The Dark Knight">
+        </a>
+        <div class="movie-title">The Dark Knight</div>
+    </div>
+    <div class="joker">
+        <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7TzsGto_FJI2I9IibPV1GWd--ki-_NAAYQ&s" alt="Joker">
+        </a>
+        <div class="movie-title">Joker</div>
+    </div>
+    <div class="friends">
+        <a href="https://www.imdb.com/title/tt0108778/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Friends">
+        </a>
+        <div class="movie-title">Friends</div>
+    </div>
+    <div class="avatar">
+        <a href="https://www.imdb.com/title/tt0499549/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Avatar">
+        </a>
+        <div class="movie-title">Avatar</div>
+    </div>
+    <div class="interstellar">
+        <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Interstellar">
+        </a>
+        <div class="movie-title">Interstellar</div>
+    </div>
+</div>
+
+<div class="container4">
+    <div class="gameofthrones">
+        <a href="https://www.imdb.com/title/tt0944947/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Game of Thrones">
+        </a>
+        <div class="movie-title">Game of Thrones</div>
+    </div>
+    <div class="toystory">
+        <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
+            <img src="https://cdn.shopify.com/s/files/1/0398/4202/1535/products/00719ToyStory_Blackstone__Rounded_1200x630.png?v=1628182841" alt="Toy Story">
+        </a>
+        <div class="movie-title">Toy Story</div>
+    </div>
+    <div class="deadpool">
+        <a href="https://www.imdb.com/title/tt1431045/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_.jpg" alt="Deadpool">
+        </a>
+        <div class="movie-title">Deadpool</div>
+    </div>
+    <div class="findingnemo">
+        <a href="https://www.imdb.com/title/tt0266543/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_.jpg" alt="Finding Nemo">
+        </a>
+        <div class="movie-title">Finding Nemo</div>
+    </div>
+    <div class="avengersendgame">
+        <a href="https://www.imdb.com/title/tt4154796/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg" alt="Avengers: Endgame">
+        </a>
+        <div class="movie-title">Avengers: Endgame</div>
+    </div>
+</div>
 </body>
-</html>
+</html> 
