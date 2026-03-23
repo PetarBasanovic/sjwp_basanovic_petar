@@ -9,6 +9,9 @@
 <style>
     body {
   background-color: #222831;
+  position: absolute;
+  overflow-y: hidden;
+  overflow-x: hidden;
     }
     .upperrow{
         background-color: #333333;
@@ -16,7 +19,7 @@
         width: 1900px;
         position: absolute;
         z-index: -1;
-        color: #ac008f;
+        color: #9929EA;
         font-size: 35px;
         font-weight: bold;
         padding-left: 15px;
@@ -26,10 +29,10 @@
     }
     
     .movies{
-        background-color: #0C134F;
+        background-color: #562097;
         height: 45px;
-        width: 150px;
-        margin-left: 480px;
+        width: 170px;
+        margin-left: 910px;
         margin-top: 7.5px;
          z-index: 0;
         position: absolute;
@@ -41,13 +44,13 @@
         padding-left: 0px;
     }
     .movies:hover{
-        background-color: #234C6A;
+        background-color: #7d33d8;
     }
     .series{
-        background-color: #0C134F;
+        background-color: #562097;
         height: 45px;
-        width: 150px;
-        margin-left: 650px;
+        width: 170px;
+        margin-left: 1100px;
         margin-top: 7.5px;
          z-index: 0;
         position: absolute;
@@ -58,15 +61,15 @@
         align-items: center;
     }
     .series:hover{
-        background-color: #234C6A;
+        background-color: #7d33d8;
     }
     
     
     .tvshows{
-        background-color: #0C134F;
+        background-color: #562097;
         height: 45px;
-        width: 150px;
-        margin-left: 990px;
+        width: 170px;
+        margin-left: 1290px;
         margin-top: 7.5px;
          z-index: 0;
         position: absolute;
@@ -77,13 +80,13 @@
         align-items: center;
     }
     .tvshows:hover{
-        background-color: #234C6A;
+        background-color: #7d33d8;
     }
     .toprated{
         background-color: #562097;
         height: 45px;
-        width: 150px;
-        margin-left: 1160px;
+        width: 170px;
+        margin-left: 1480px;
         margin-top: 7.5px;
          z-index: 0;
         position: absolute;
@@ -96,9 +99,6 @@
     .toprated:hover{
         background-color: #7d33d8;
     }
-    
-
-    
     
     .search{
         background-color: #330669;
@@ -123,31 +123,40 @@
         background-color: #5C3E94;
     }    
 
+    .container {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
 
-    .breakingbad {
+.breakingbad, .chernobyl {
     width: 330px;
     height: 480px;
     text-align: center;
-    transition: transform 0.3s;
-    z-index: 1;
-    text-align: ;
-    margin-top: 100px;
-    margin-left: 50px;
-    position: absolute;
-    color: #cf00ad;
     font-size: 24px;
-    transition: transform 0.3s ease, color 1s ease;
-    }
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
 
-    .breakingbad:hover {
+.breakingbad:hover {
     transform: scale(1.1);
     color: #1ABC9C;
-    
-    }
-    .breakingbad img{
+}
+
+.chernobyl:hover {
+    transform: scale(1.1);
+    color: #556B2F;
+}
+
+.breakingbad img, .chernobyl img {
     width: 330px;
     height: 480px;
-    }
+    display: block;
+    margin: 5px;
+}
 </style>
 <body>
     <div class="upperrow">Stranica</div>
@@ -155,16 +164,25 @@
     <div class="series">Series</div>
     <div class="tvshows">TV Shows</div>
     <div class="toprated">Top Rated</div>
-   
-    
     <div class="search">search...</div>
     <input class="search" type="text" placeholder="search...">
 
+
+    <div class="container">
     <div class="breakingbad">
         <a href="https://www.imdb.com/title/tt0903747/" target="_blank">
-        <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg" alt="Naziv filma" >
+            <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg" alt="Breaking Bad">
         </a>
-    <div class="movie-title">Breaking Bad</div>
+        <div class="movie-title">Breaking Bad</div>
+    </div>
+
+    <div class="chernobyl">
+        <a href="https://www.imdb.com/title/tt7366338/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg" alt="Chernobyl">
+        </a>
+        <div class="movie-title">Chernobyl</div>
+    </div>
 </div>
+
 </body>
 </html>
