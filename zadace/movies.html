@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<style>
+    body {
+  background-color: #222831;
+  position: absolute;
+  
+  overflow-x: hidden;
+  overflow-y: scroll; 
+  padding-bottom: 100px;
+    }
+    html::-webkit-scrollbar {
+  display: none;
+}
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #333333;
+    position: sticky;
+    top: -100;
+    z-index: 0;
+    margin-top: 0px;
+}.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-size: 42px;
+    font-weight: bold;
+    color: #9929EA;
+    margin-left: -150px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 10%;
+}.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9929EA;
+    font-size: 25px;
+    transition: color 0.3s;
+     margin-right: 50px;
+        height: 45px;
+        width: 170px;
+}
+
+.nav-links a:hover {
+    color: #994df5;
+    border-radius: 16px;
+      padding: 11px 25px;
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.8);
+     transition: all 0.3s ease;
+     border: 4px solid transparent;
+}
+
+
+   .container1 {
+    display: flex;
+    gap: 50px;
+    margin-top: 50px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.thematrix, .fightclub, .thegodfather, .thedarkknight, .joker {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.thematrix:hover {
+    transform: scale(1.1);
+    color: #00FF00;
+}
+.fightclub:hover {
+    transform: scale(1.1);
+    color: #ff4c4c;
+}
+.thegodfather:hover{
+    transform: scale(1.1);
+    color: #b71c1c;
+}
+.thedarkknight:hover{
+    transform: scale(1.1);
+    color: #3498db;
+}
+.joker:hover{
+    transform: scale(1.1);
+    color: #8b0000;
+}
+.thematrix img, .fightclub img, .thegodfather img, .thedarkknight img, .joker img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+
+.container2 {
+    display: flex;
+    gap: 50px;
+    margin-top: 550px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.avatar, .interstellar, .spidermanhomecoming, .shawshank, .angrymen {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.avatar:hover {
+    transform: scale(1.1);
+    color: #00aaff;
+}
+.interstellar:hover {
+    transform: scale(1.1);
+    color: #e0e0d1;
+}
+.spidermanhomecoming:hover{
+    transform: scale(1.1);
+    color: #ff3b3b;
+}
+.shawshank:hover{
+    transform: scale(1.1);
+    color: #6fa8dc;
+}
+.angrymen:hover{
+    transform: scale(1.1);
+    color: #f1c40f;
+}
+.avatar img, .interstellar img, .spidermanhomecoming img, .shawshank img, .angrymen img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+
+.container3 {
+    display: flex;
+    gap: 50px;
+    margin-top: 1100px;
+    justify-content: center;
+    margin-top: 100px;
+    margin-left: 30px;
+}
+.schindler, .lordreturn, .pulpfiction, .forrestgump, .inception {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+.schindler:hover {
+    transform: scale(1.1);
+    color: #ec7063;
+}
+.lordreturn:hover {
+    transform: scale(1.1);
+    color: #f39c12;
+}
+.pulpfiction:hover{
+    transform: scale(1.1);
+    color: #f7dc6f;
+}
+.forrestgump:hover{
+    transform: scale(1.1);
+    color: #58d68d;
+}
+.inception:hover{
+    transform: scale(1.1);
+    color: #5dade2;
+}
+.schindler img, .lordreturn img, .pulpfiction img, .forrestgump img, .inception img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+
+   .search{
+        background-color: #330669;
+        height: 40px;
+        width: 220px;
+        margin-left: 1600px;
+        margin-top: -65px;
+        z-index: 0;
+        position: absolute;
+        color: #D3DAD9;
+        font-size: 20px;
+        display: flex;
+        align-items: center;   
+        justify-content: flex-start;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        
+
+        }
+    .search:hover{
+        background-color: #5C3E94;
+    }    
+
+
+
+
+
+
+
+</style>
+<body>
+<nav class="navbar">
+    <div class="nav-left">
+        
+        <span class="brand-name">Stranica</span>
+    </div>
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html" class="active">Series</a></li>
+            <li><a href="animated.html">Animated</a></li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+
+    <div class="search">search...</div>
+    <input class="search" type="text" placeholder="search...">
+
+
+       <div class="container1">
+        <div class="thematrix">
+        <a href="https://www.imdb.com/title/tt7366338/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfSjSWOCaw5dnDL2GT1zFd9RMCgUGw5Q2Cfg&s" alt="The Matrix">
+        </a>
+        <div class="movie-title">The Matrix</div>
+    </div>
+    <div class="fightclub">
+        <a href="https://www.imdb.com/title/tt0137523/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTgyOGQ1NDItNGU3Ny00MjU3LTg2YWEtNmEyYjBiMjI1Y2M5XkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="Fight Club">
+        </a>
+        <div class="movie-title">Fight Club</div>
+    </div>
+    <div class="thegodfather">
+        <a href="https://www.imdb.com/title/tt0068646/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNGEwYjgwOGQtYjg5ZS00Njc1LTk2ZGEtM2QwZWQ2NjdhZTE5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Godfather">
+        </a>
+        <div class="movie-title">The Godfather</div>
+    </div>
+    <div class="thedarkknight">
+        <a href="https://www.imdb.com/title/tt0468569/" target="_blank">
+            <img src="https://play-lh.googleusercontent.com/auIs5tjWlLYaFPGClZOJ7m5YVbnX6uBvz0X02r8TkwFKdzE53ww2MqWSS9gU0YNqoYwvpg" alt="The Dark Knight">
+        </a>
+        <div class="movie-title">The Dark Knight</div>
+    </div>
+    <div class="joker">
+        <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQP7TzsGto_FJI2I9IibPV1GWd--ki-_NAAYQ&s" alt="Joker">
+        </a>
+        <div class="movie-title">Joker</div>
+    </div>
+</div>
+
+ <div class="container2">
+    <div class="avatar">
+        <a href="https://www.imdb.com/title/tt0499549/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BMDEzMmQwZjctZWU2My00MWNlLWE0NjItMDJlYTRlNGJiZjcyXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Avatar">
+        </a>
+        <div class="movie-title">Avatar</div>
+    </div>
+    <div class="interstellar">
+        <a href="https://www.imdb.com/title/tt0816692/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_QL75_UX190_CR0,0,190,281_.jpg" alt="Interstellar">
+        </a>
+        <div class="movie-title">Interstellar</div>
+    </div>
+    <div class="spidermanhomecoming">
+        <a href="https://www.imdb.com/title/tt2250912/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BODY2MTAzOTQ4M15BMl5BanBnXkFtZTgwNzg5MTE0MjI@._V1_.jpg" alt="Spiderman: Homecoming">
+        </a>
+        <div class="movie-title">Spiderman: Homecoming</div>
+    </div>
+    <div class="shawshank">
+    <a href="https://www.imdb.com/title/tt0111161/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMDAyY2FhYjctNDc5OS00MDNlLThiMGUtY2UxYWVkNGY2ZjljXkEyXkFqcGc@._V1_QL75_UX190_CR0,2,190,281_.jpg" alt="The Shawshank Redemption">
+    </a>
+    <div class="movie-title">The Shawshank Redemption</div>
+</div>
+
+<div class="angrymen">
+    <a href="https://www.imdb.com/title/tt0050083/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BYjE4NzdmOTYtYjc5Yi00YzBiLWEzNDEtNTgxZGQ2MWVkN2NiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="12 Angry Men">
+    </a>
+    <div class="movie-title">12 Angry Men</div>
+</div>
+    
+    
+    
+</div>
+
+<div class="container3">
+    <div class="schindler">
+    <a href="https://www.imdb.com/title/tt0108052/" target="_blank">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhoYNxVwrC7XuwQzBZbbpoMwjjad51GahdVA&s" alt="Schindler's List">
+    </a>
+    <div class="movie-title">Schindler's List</div>
+</div>
+
+<div class="lordreturn">
+    <a href="https://www.imdb.com/title/tt0167260/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMTZkMjBjNWMtZGI5OC00MGU0LTk4ZTItODg2NWM3NTVmNWQ4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="The Lord of the Rings: The Return of the King">
+    </a>
+    <div class="movie-title">The Lord of the Rings: The Return of the King</div>
+</div>
+
+<div class="pulpfiction">
+    <a href="https://www.imdb.com/title/tt0110912/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BYTViYTE3ZGQtNDBlMC00ZTAyLTkyODMtZGRiZDg0MjA2YThkXkEyXkFqcGc@._V1_.jpg" alt="Pulp Fiction">
+    </a>
+    <div class="movie-title">Pulp Fiction</div>
+</div>
+
+<div class="forrestgump">
+    <a href="https://www.imdb.com/title/tt0109830/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDYwNzVjMTItZmU5YS00YjQ5LTljYjgtMjY2NDVmYWMyNWFmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Forrest Gump">
+    </a>
+    <div class="movie-title">Forrest Gump</div>
+</div>
+
+<div class="inception">
+    <a href="https://www.imdb.com/title/tt1375666/" target="_blank">
+        <img src="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg" alt="Inception">
+    </a>
+    <div class="movie-title">Inception</div>
+</div>
+</div>
+</body>
+</html>

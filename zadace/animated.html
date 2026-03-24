@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>zadaca 3</title>
-    <link rel="stylesheet" href="./styles.css">
+    <title>Movies</title>
 </head>
 <style>
     body {
@@ -18,43 +17,6 @@
     html::-webkit-scrollbar {
   display: none;
 }
-    /*.upperrow{
-        background-color: #333333;
-        height: 60px;
-        width: 1900px;
-        position: absolute;
-        z-index: -1;
-        color: #9929EA;
-        font-size: 35px;
-        font-weight: bold;
-        padding-left: 15px;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-    }*/
-    
-    
-    
-    /*.series{
-        background-color: #562097;
-        height: 45px;
-        width: 170px;
-        margin-left: 1290px;
-        margin-top: 7.5px;
-         z-index: 0;
-        position: absolute;
-        color: #D3DAD9;
-        font-size: 20px;
-        display: flex;
-        justify-content: center; 
-        align-items: center;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-    }
-    .series:hover{
-        background-color: #7d33d8;
-    }*/
-    
     .navbar {
     display: flex;
     justify-content: space-between;
@@ -110,38 +72,7 @@
 }
 
 
-/*
-input[type="radio"] {
-    appearance: none;
-    display: none;
-}*/
-
-
-
-    .search{
-        background-color: #330669;
-        height: 40px;
-        width: 220px;
-        margin-left: 1600px;
-        margin-top: -65px;
-        z-index: 0;
-        position: absolute;
-        color: #D3DAD9;
-        font-size: 20px;
-        display: flex;
-        align-items: center;   
-        justify-content: flex-start;
-        padding-left: 10px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        
-
-        }
-    .search:hover{
-        background-color: #5C3E94;
-    }    
-
-    .container1 {
+   .container1 {
     display: flex;
     gap: 50px;
     margin-top: 50px;
@@ -270,51 +201,37 @@ input[type="radio"] {
     margin: 5px;
 }
 
-.container4 {
-    display: flex;
-    gap: 50px;
-    margin-top: 1650px;
-    justify-content: center;
-    margin-top: 100px;
-    margin-left: 30px;
-}
-.gameofthrones, .toystory, .deadpool, .findingnemo, .avengersendgame {
-    width: 330px;
-    height: 480px;
-    text-align: center;
-    font-size: 24px;
-    color: #9929EA;
-    transition: transform 0.3s ease, color 0.3s ease;
-}
-.gameofthrones:hover {
-    transform: scale(1.1);
-    color: #a52a2a;
-}
-.toystory:hover {
-    transform: scale(1.1);
-    color: #ffeb3b;
-}
-.deadpool:hover{
-    transform: scale(1.1);
-    color: #ff0000;
-}
-.findingnemo:hover{
-    transform: scale(1.1);
-    color: #ff7f50;
-}
-.avengersendgame:hover{
-    transform: scale(1.1);
-    color: #1e90ff;
-}
-.gameofthrones img, .toystory img, .deadpool img, .findingnemo img, .avengersendgame img {
-    width: 330px;
-    height: 480px;
-    display: block;
-    margin: 5px;
-}
+   .search{
+        background-color: #330669;
+        height: 40px;
+        width: 220px;
+        margin-left: 1600px;
+        margin-top: -65px;
+        z-index: 0;
+        position: absolute;
+        color: #D3DAD9;
+        font-size: 20px;
+        display: flex;
+        align-items: center;   
+        justify-content: flex-start;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        
+
+        }
+    .search:hover{
+        background-color: #5C3E94;
+    }    
+
+
+
+
+
+
+
 </style>
 <body>
-
 <nav class="navbar">
     <div class="nav-left">
         
@@ -336,7 +253,7 @@ input[type="radio"] {
     <input class="search" type="text" placeholder="search...">
 
 
-    <div class="container1">
+       <div class="container1">
     <div class="breakingbad">
         <a href="https://www.imdb.com/title/tt0903747/" target="_blank">
             <img src="https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_.jpg" alt="Breaking Bad">
@@ -434,38 +351,5 @@ input[type="radio"] {
         <div class="movie-title">Interstellar</div>
     </div>
 </div>
-
-<div class="container4">
-    <div class="gameofthrones">
-        <a href="https://www.imdb.com/title/tt0944947/" target="_blank">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Game of Thrones">
-        </a>
-        <div class="movie-title">Game of Thrones</div>
-    </div>
-    <div class="toystory">
-        <a href="https://www.imdb.com/title/tt7286456/" target="_blank">
-            <img src="https://cdn.shopify.com/s/files/1/0398/4202/1535/products/00719ToyStory_Blackstone__Rounded_1200x630.png?v=1628182841" alt="Toy Story">
-        </a>
-        <div class="movie-title">Toy Story</div>
-    </div>
-    <div class="deadpool">
-        <a href="https://www.imdb.com/title/tt1431045/" target="_blank">
-            <img src="https://m.media-amazon.com/images/M/MV5BNzY3ZWU5NGQtOTViNC00ZWVmLTliNjAtNzViNzlkZWQ4YzQ4XkEyXkFqcGc@._V1_.jpg" alt="Deadpool">
-        </a>
-        <div class="movie-title">Deadpool</div>
-    </div>
-    <div class="findingnemo">
-        <a href="https://www.imdb.com/title/tt0266543/" target="_blank">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTc5NjExNTA5OV5BMl5BanBnXkFtZTYwMTQ0ODY2._V1_.jpg" alt="Finding Nemo">
-        </a>
-        <div class="movie-title">Finding Nemo</div>
-    </div>
-    <div class="avengersendgame">
-        <a href="https://www.imdb.com/title/tt4154796/" target="_blank">
-            <img src="https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_FMjpg_UX1000_.jpg" alt="Avengers: Endgame">
-        </a>
-        <div class="movie-title">Avengers: Endgame</div>
-    </div>
-</div>
 </body>
-</html> 
+</html>

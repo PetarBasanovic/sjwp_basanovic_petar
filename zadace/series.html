@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+</head>
+<style>
+    body {
+  background-color: #222831;
+  position: absolute;
+  
+  overflow-x: hidden;
+  overflow-y: scroll; 
+  padding-bottom: 100px;
+    }
+    html::-webkit-scrollbar {
+  display: none;
+}
+    .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10%;
+    background-color: #333333;
+    position: sticky;
+    top: -100;
+    z-index: 0;
+    margin-top: 0px;
+}.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand-name {
+    font-size: 42px;
+    font-weight: bold;
+    color: #9929EA;
+    margin-left: -150px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-right: 10%;
+}.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 6rem;
+
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #9929EA;
+    font-size: 25px;
+    transition: color 0.3s;
+     margin-right: 50px;
+        height: 45px;
+        width: 170px;
+}
+
+.nav-links a:hover {
+    color: #994df5;
+    border-radius: 16px;
+      padding: 11px 25px;
+    box-shadow: 1px 2px 10px rgba(255, 255, 255, 0.8);
+     transition: all 0.3s ease;
+     border: 4px solid transparent;
+}
+
+
+.container1, .container2, .container3 {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    margin-left: 30px;
+}
+
+.container1 { margin-top: 50px; }
+.container2 { margin-top: 100px; }
+.container3 { margin-top: 100px; }
+
+.breakingbad, .chernobyl, .thesopranos, .fargo, .friends, .bettercallsaul,
+.thewire, .themandalorian, .dark, .westworld, .theexpanse, .thecrown, .houseofcards, .mindhunter, .sherlock {
+    width: 330px;
+    height: 480px;
+    text-align: center;
+    font-size: 24px;
+    color: #9929EA;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.breakingbad:hover { transform: scale(1.1); color: #1ABC9C; }
+.chernobyl:hover { transform: scale(1.1); color: #556B2F; }
+.thesopranos:hover { transform: scale(1.1); color: #ff3b3b; }
+.fargo:hover { transform: scale(1.1); color: #ff4c4c; }
+.friends:hover { transform: scale(1.1); color: #ffcc00; }
+.bettercallsaul:hover { transform: scale(1.1); color: #b71c1c; }
+.thewire:hover { transform: scale(1.1); color: #ff6f61; }
+.themandalorian:hover { transform: scale(1.1); color: #f44336; }
+.dark:hover { transform: scale(1.1); color: #3498db; }
+.westworld:hover { transform: scale(1.1); color: #8b0000; }
+.avatar:hover { transform: scale(1.1); color: #00aaff; }
+.interstellar:hover { transform: scale(1.1); color: #e0e0d1; }
+
+.breakingbad img, .chernobyl img, .thesopranos img, .fargo img, 
+.friends img, .bettercallsaul img, .thewire img, .themandalorian img,
+.dark img, .westworld img, .avatar img, .interstellar img {
+    width: 330px;
+    height: 480px;
+    display: block;
+    margin: 5px;
+}
+   .search{
+        background-color: #330669;
+        height: 40px;
+        width: 220px;
+        margin-left: 1600px;
+        margin-top: -65px;
+        z-index: 0;
+        position: absolute;
+        color: #D3DAD9;
+        font-size: 20px;
+        display: flex;
+        align-items: center;   
+        justify-content: flex-start;
+        padding-left: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        
+
+        }
+    .search:hover{
+        background-color: #5C3E94;
+    }   
+
+
+
+
+
+
+</style>
+<body>
+<nav class="navbar">
+    <div class="nav-left">
+        
+        <span class="brand-name">Stranica</span>
+    </div>
+    <div class="nav-right">
+        <ul class="nav-links">
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="series.html" class="active">Series</a></li>
+            <li><a href="animated.html">Animated</a></li>
+            
+        </ul>
+        
+    </div>
+</nav>
+
+    <div class="search">search...</div>
+    <input class="search" type="text" placeholder="search...">
+
+
+    <div class="container1">
+    <div class="breakingbad">
+        <a href="https://www.imdb.com/title/tt0903747/" target="_blank">
+            <img src="https://mediaproxy.tvtropes.org/width/1200/https://static.tvtropes.org/pmwiki/pub/images/breaking_bad_4.png" alt="Breaking Bad">
+        </a>
+        <div class="movie-title">Breaking Bad</div>
+    </div>
+    <div class="chernobyl">
+        <a href="https://www.imdb.com/title/tt7366338/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a7/Chernobyl_2019_Miniseries.jpg" alt="Chernobyl">
+        </a>
+        <div class="movie-title">Chernobyl</div>
+    </div>
+    <div class="thesopranos">
+        <a href="https://www.imdb.com/title/tt0141842/" target="_blank">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7894124_b_v8_ab.jpg" alt="The Sopranos">
+        </a>
+        <div class="movie-title">The Sopranos</div>
+    </div>
+    <div class="friends">
+        <a href="https://www.imdb.com/title/tt0108778/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BOTU2YmM5ZjctOGVlMC00YTczLTljM2MtYjhlNGI5YWMyZjFkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Friends">
+        </a>
+        <div class="movie-title">Friends</div>
+    </div>
+    <div class="fargo">
+        <a href="https://www.imdb.com/title/tt0108778/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNjg4MWE0MjEtODFhNy00MjA5LTg5ODktMzgwNWFmZTAwNjBlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Fargo">
+        </a>
+        <div class="movie-title">Fargo</div>
+    </div>
+</div>
+
+<div class="container2">
+    <div class="bettercallsaul">
+        <a href="https://www.imdb.com/title/tt0904208/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BNDdjNTEzMjMtYjM3Mi00NzQ3LWFlNWMtZjdmYWU3ZDkzMjk1XkEyXkFqcGc@._V1_.jpg" alt="Better Call Saul">
+        </a>
+        <div class="movie-title">Better Call Saul</div>
+    </div>
+    <div class="thewire">
+        <a href="https://www.imdb.com/title/tt0306414/" target="_blank">
+            <img src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p7892928_b_v8_ab.jpg" alt="The Wire">
+        </a>
+        <div class="movie-title">The Wire</div>
+    </div>
+    <div class="themandalorian">
+        <a href="https://www.imdb.com/title/tt7462410/" target="_blank">
+            <img src="https://cdn.europosters.eu/image/750/103406.jpg" alt="The Mandalorian">
+        </a>
+        <div class="movie-title">The Mandalorian</div>
+    </div>
+    <div class="dark">
+        <a href="https://www.imdb.com/title/tt5753856/" target="_blank">
+            <img src="https://m.media-amazon.com/images/M/MV5BOWJjMGViY2UtNTAzNS00ZGFjLWFkNTMtMDBiMDMyZTM1NTY3XkEyXkFqcGc@._V1_.jpg" alt="Dark">
+        </a>
+        <div class="movie-title">Dark</div>
+    </div>
+    <div class="westworld">
+        <a href="https://www.imdb.com/title/tt0475784/" target="_blank">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiqHIlL0dnbEDRg386nY8LHFkFBl4C2wPKLy9QTws1Sy0hOaWxWFKQpSus2q1uPPecjewO&s=10" alt="Westworld">
+        </a>
+        <div class="movie-title">Westworld</div>
+    </div>
+</div>
+
+<div class="container3">
+    <div class="theexpanse">
+        <a href="https://www.imdb.com/title/tt3230854/" target="_blank">
+            <img src="" alt="The Expanse">
+        </a>
+        <div class="movie-title">The Expanse</div>
+    </div>
+    <div class="thecrown">
+        <a href="https://www.imdb.com/title/tt4786824/" target="_blank">
+            <img src="" alt="The Crown">
+        </a>
+        <div class="movie-title">The Crown</div>
+    </div>
+    <div class="houseofcards">
+        <a href="https://www.imdb.com/title/tt1856010/" target="_blank">
+            <img src="" alt="House of Cards">
+        </a>
+        <div class="movie-title">House of Cards</div>
+    </div>
+    <div class="mindhunter">
+        <a href="https://www.imdb.com/title/tt5290382/" target="_blank">
+            <img src="" alt="Mindhunter">
+        </a>
+        <div class="movie-title">Mindhunter</div>
+    </div>
+    <div class="sherlock">
+        <a href="https://www.imdb.com/title/tt1475582/" target="_blank">
+            <img src="" alt="Sherlock">
+        </a>
+        <div class="movie-title">Sherlock</div>
+    </div>
+</div>
+</div>
+</body>
+</html>
