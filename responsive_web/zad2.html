@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zadatak 2</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #ddd;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* BOJE */
+.a { background: orangered; }
+.b { background: orange; }
+.c { background: gold; }
+.d { background: yellowgreen; }
+
+.container > div {
+  width: 100%;
+  height: 25%; /* 4 reda na mobitelu */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+/* TABLET (2x2) */
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .container > div {
+    width: 50%;
+    height: 50%;
+  }
+}
+
+/* DESKTOP (4 u redu) */
+@media (min-width: 1024px) {
+  .container {
+    flex-wrap: nowrap;
+  }
+
+  .container > div {
+    width: 25%;
+    height: 100%;
+  }
+}
+</style>
+
+</head>
+<body>
+
+<div class="container">
+  <div class="a">1</div>
+  <div class="b">2</div>
+  <div class="c">3</div>
+  <div class="d">4</div>
+</div>
+
+</body>
+</html>
