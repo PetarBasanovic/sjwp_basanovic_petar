@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FC Barcelona</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f4f4f4;
+    color:#222;
+    line-height:1.6;
+}
+
+header{
+    background:linear-gradient(90deg,#a50044,#004d98);
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+header h1{
+    font-size:55px;
+}
+
+nav{
+    background:#111;
+    padding:15px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    font-size:18px;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:gold;
+}
+
+.hero{
+    height:350px;
+    background:url('https://upload.wikimedia.org/wikipedia/en/4/47/FC_Barcelona_%28crest%29.svg') no-repeat center;
+    background-size:220px;
+    background-color:#e9e9e9;
+}
+
+.container{
+    width:90%;
+    max-width:1300px;
+    margin:auto;
+    padding:40px 0;
+}
+
+section{
+    margin-bottom:70px;
+}
+
+h2{
+    margin-bottom:25px;
+    color:#a50044;
+    border-bottom:3px solid #004d98;
+    display:inline-block;
+    padding-bottom:5px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:white;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+    text-align:center;
+}
+
+.card-content h3{
+    color:#004d98;
+}
+
+.trophies{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.trophy{
+    background:white;
+    border-radius:12px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+.trophy img{
+    width:120px;
+    height:120px;
+    object-fit:contain;
+    margin-bottom:15px;
+}
+
+.stadium{
+    display:flex;
+    flex-wrap:wrap;
+    gap:30px;
+    align-items:center;
+}
+
+.stadium img{
+    width:100%;
+    max-width:550px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>FC Barcelona</h1>
+    <p>Més que un club</p>
+</header>
+
+<nav>
+    <a href="#povijest">Povijest</a>
+    <a href="#igraci">Igrači</a>
+    <a href="#trofeji">Trofeji</a>
+    <a href="#campnou">Camp Nou</a>
+</nav>
+
+<section class="hero"></section>
+
+<div class="container">
+
+    <!-- POVIJEST -->
+    <section id="povijest">
+        <h2>Povijest</h2>
+
+        <p>
+            FC Barcelona osnovana je 1899. godine i smatra se jednim od
+            najvećih nogometnih klubova u povijesti. Klub je poznat po
+            svojoj filozofiji napadačkog nogometa, legendarnoj La Masiji
+            i brojnim trofejima osvojenim kroz desetljeća.
+        </p>
+    </section>
+
+    <!-- IGRACI -->
+    <section id="igraci">
+
+        <h2>Legendarni igrači</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <img src="https://i.namu.wiki/i/Gy1RTII6FFGz4nyz42ehx3pFIwJS6ECDSQCPzuv0tDZ0VeBQPPCLPZ9go98osvuQFoHNDmll_Nyilpr2Ke9Edg.webp">
+                <div class="card-content">
+                    <h3>Lionel Messi</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUU0da7aUaYkeQrHPGdFYWvedaUPUVdzMtKg&s">
+                <div class="card-content">
+                    <h3>Neymar Jr</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://images2.minutemediacdn.com/image/upload/c_crop,x_0,y_0,w_3300,h_2200/c_fill,w_720,ar_3:2,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/si/01kaexryh8kwz6n93jbc.jpg">
+                <div class="card-content">
+                    <h3>Ronaldinho</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/949_xavi.jpg">
+                <div class="card-content">
+                    <h3>Xavi</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://cdn-img.zerozero.pt/img/jogadores/new/07/62/762_andres_iniesta_20250919152536.png">
+                <div class="card-content">
+                    <h3>Iniesta</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://m.media-amazon.com/images/M/MV5BNWMyOTNlOTctMGMxZi00MWFlLWJjZDAtMTQ3ODA0NWQ3NWY0XkEyXkFqcGc@._V1_.jpg">
+                <div class="card-content">
+                    <h3>Carles Puyol</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/213_cruyff.jpg">
+                <div class="card-content">
+                    <h3>Johan Cruyff</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/448_koeman.jpg">
+                <div class="card-content">
+                    <h3>Ronald Koeman</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://talksport.com/wp-content/uploads/2021/01/NINTCHDBPICT000630637537-e1610723482520.jpg?strip=all&w=960">
+                <div class="card-content">
+                    <h3>Pep Guardiola</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://fcb-abj-pre.s3.amazonaws.com/img/jugadors/855_suarez_luis.jpg">
+                <div class="card-content">
+                    <h3>Luis Suarez</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE4JjnngvPsCx4Y15k9_JaAZT_sCroFzXlfg&s">
+                <div class="card-content">
+                    <h3>Sergio Busquets</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.fcbarcelona.com/photo-resources/2020/03/09/6cfb910a-1edd-4a1b-b854-498d32bc97d1/eto-o-fcb-at.madrid-8-.jpg?width=1200&height=750">
+                <div class="card-content">
+                    <h3>Samuel Eto'o</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/03/19/73cab013-99a3-476a-b605-8f7a8f212106/Dani-Alves.jpg?width=1200&height=750">
+                <div class="card-content">
+                    <h3>Dani Alves</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Piqu%C3%A9.jpg/250px-Piqu%C3%A9.jpg">
+                <div class="card-content">
+                    <h3>Gerard Pique</h3>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="https://e1.365dm.com/11/12/800x600/David-Villa-Dec-2011_2691429.jpg?20111215121647">
+                <div class="card-content">
+                    <h3>David Villa</h3>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- TROFEJI -->
+    <section id="trofeji">
+
+        <h2>Trofeji</h2>
+
+        <div class="trophies">
+
+            <div class="trophy">
+                <img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_1:1,f_auto,q_auto,g_auto/shape/cover/sport/914414b723a8af2a65a4324e0401a9127c29b61265bc1ac09ff182566711ea1f.jpg">
+                <h3>La Liga</h3>
+                <p>27 naslova</p>
+            </div>
+
+            <div class="trophy">
+                <img src="https://editorial.uefa.com/resources/0296-1d2ac4aeddcc-a3c557b692c9-1000/fbl-eur-c1-draw.jpeg">
+                <h3>Liga prvaka</h3>
+                <p>5 naslova</p>
+            </div>
+
+            <div class="trophy">
+                <img src="https://www.fcbarcelona.com/fcbarcelona/photo/2021/04/12/c1adf10c-bee5-4e5b-8ba0-adc79940b182/Copa-del-Rey.jpg">
+                <h3>Copa del Rey</h3>
+                <p>31 naslov</p>
+            </div>
+
+            <div class="trophy">
+                <img src="https://media.gettyimages.com/id/2219233230/photo/los-angeles-california-a-detailed-view-of-the-fifa-club-world-cup-trophy-on-display-at-bmo.jpg?s=612x612&w=gi&k=20&c=WrdwP1QyZr0SIcK5DINm9vK2TwXM0ISJHE73vcH0jYk=">
+                <h3>FIFA Club World Cup</h3>
+                <p>3 naslova</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- CAMP NOU -->
+    <section id="campnou">
+
+        <h2>Camp Nou</h2>
+
+        <div class="stadium">
+
+            <img src="https://www.fcbarcelona.com/photo-resources/fcbarcelona/photo/2018/06/07/7d6795e0-388b-4710-9adc-b5451253cbe7/DanHlskWsAADKM0.jpg?width=1200&height=750">
+
+            <div>
+                <p>
+                    Camp Nou je dom FC Barcelone od 1957. godine.
+                    Stadion može primiti više od 99.000 gledatelja
+                    i jedan je od najvećih i najpoznatijih stadiona
+                    na svijetu.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+</div>
+
+<footer>
+    <p>© 2026 FC Barcelona Fan Page</p>
+</footer>
+
+</body>
+</html>
